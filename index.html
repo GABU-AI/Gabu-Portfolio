@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta property="og:title" content="Gabriel Wainaina - Web Developer">
+    <meta property="og:description" content="Explore my professional profile and contact details.">
+    <meta property="og:image" content="images/profile-picture.jpg">
+    <meta name="description" content="Gabriel Wainaina - Professional Web Developer specializing in dynamic and user-friendly websites. Discover more about me and how to connect.">
+    <meta name="author" content="Gabriel Wainaina">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Wainaina - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+       /* Background Video */
+.back-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the whole screen */
+    z-index: -1; /* Keeps the video behind other content */
+}
+
+
+        /* Header, Navigation, Content, Footer */
+        header, nav, .main-content, footer {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+
+        /* Header Styles */
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background: #f4f4f4;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #34495e;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .main-content h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+
+        .main-content p {
+            font-size: 1.2rem;
+            color: #333;
+            margin: 1rem 0;
+            line-height: 1.8;
+        }
+
+        .main-content section {
+            margin-top: 2rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .main-content section h3 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .main-content ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .main-content ul li {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .main-content ul li:before {
+            content: '✔';
+            position: absolute;
+            left: 0;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+
+  /* Testimonials Section */
+.testimonials {
+    padding: 2rem;
+    background-color: transparent; /* Make the section background transparent */
+    text-align: center;
+}
+
+.testimonials h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials-container {
+    display: flex;
+    flex-direction: row; /* Align testimonials horizontally */
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden; /* Hide overflow content to enable scrolling */
+    width: 100%;
+    position: relative;
+}
+
+.testimonial {
+    padding: 1.5rem;
+    margin-right: 1rem; /* Space between testimonials */
+    border-radius: 8px;
+    width: 300px; /* Adjust the width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    background: transparent; /* Ensure no white background */
+    transform-origin: center center; /* For rotating effect */
+    animation: rotateTestimonials 20s linear infinite; /* Slow down the rotating animation */
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.testimonial footer {
+    font-size: 1.1rem;
+    color: white;  /* Change text color to white */
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block; /* Ensure it is a block element to display properly */
+}
+
+
+
+.testimonial .stars {
+    margin-top: 0.5rem;
+}
+
+
+/* Keyframes for rotating effect */
+@keyframes rotateTestimonials {
+    0% {
+        transform: rotateY(0deg); /* Initial position */
+    }
+    25% {
+        transform: rotateY(90deg); /* Rotate to the right */
+    }
+    50% {
+        transform: rotateY(180deg); /* Rotate to the opposite side */
+    }
+    75% {
+        transform: rotateY(270deg); /* Rotate to the left */
+    }
+    100% {
+        transform: rotateY(360deg); /* Complete the rotation */
+    }
+}
+
+        /* Footer Styles */
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .testimonials-container {
+                flex-direction: column; /* Stack testimonials vertically on small screens */
+            }
+
+            .testimonial {
+                width: 80%; /* Make testimonials more narrow */
+                margin-bottom: 2rem;
+            }
+        }
+        
+    /* Existing Styles (Unchanged) */
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 1024px) {
+        header h1 {
+            font-size: 2rem;
+        }
+        
+        .main-content h2 {
+            font-size: 2rem;
+        }
+        
+        .main-content ul li {
+            font-size: 1rem;
+        }
+        
+        .testimonial {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        header h1 {
+            font-size: 1.8rem;
+        }
+
+        header p {
+            font-size: 1rem;
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav a {
+            margin: 0.5rem 0;
+        }
+
+        .main-content {
+            padding: 1.5rem;
+        }
+
+        .main-content h2 {
+            font-size: 1.8rem;
+        }
+
+        .main-content p {
+            font-size: 1rem;
+        }
+
+        .main-content ul {
+            padding-left: 1rem;
+        }
+
+        .testimonials-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .testimonial {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        body {
+            font-size: 0.9rem;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .main-content h2 {
+            font-size: 1.5rem;
+        }
+
+        .main-content ul li {
+            font-size: 0.9rem;
+        }
+
+        .testimonial {
+            width: 100%;
+        }
+
+        .testimonials-container {
+            padding: 1rem;
+        }
+
+        footer {
+            font-size: 0.8rem;
+        }
+    }
+</style>
+
+    </style>
+</head>
+<body>
+    <video preload="auto" autoplay loop muted playsinline class="back-video">
+        <source src="images/y2mate.com - Developer Coding Background_1080.mp4" type="video/mp4">
+        Your browser does not support the video tag. <img src="images/fallback.jpg" alt="Fallback image for video">
+    </video>
+    
+    <header>
+        <h1>Gabriel Wainaina</h1>
+        <p>Professional Web Developer | Crafting Digital Solutions</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="main-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Hello! I’m Gabriel Wainaina, a seasoned web developer specializing in creating dynamic, user-friendly websites that deliver seamless digital experiences.<br> a passion for coding and a knack for problem-solving, I transform ideas into functional, visually appealing web solutions.</p>
+        <p>Whether you're a business looking to establish an online presence, an individual with a creative project, or a team in need of collaboration, I’m here to help you achieve your goals.</p>
+        <p>Explore my work, learn about my journey, and feel free to reach out for collaborations or inquiries. Together, we can build something amazing!</p>
+
+        <section>
+            <h3>Why Choose Me?</h3>
+            <ul>
+                <li><strong>Expertise:</strong> Years of experience in web development with a strong portfolio of successful projects.</li>
+                <li><strong>Innovative Solutions:</strong> Creativity and innovation in every project I undertake.</li>
+                <li><strong>Client-Centric Approach:</strong> I prioritize understanding your needs to deliver results that exceed expectations.</li>
+                <li><strong>Responsive Design:</strong> Ensuring your website looks great on any device, big or small.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>What I Offer</h3>
+            <p>I provide a range of web development services to meet diverse needs:</p>
+            <ul>
+                <li>Custom Website Development</li>
+                <li>Responsive and Mobile-Friendly Design</li>
+                <li>No-Code Development with Bubble.io</li>
+                <li>Website Optimization for Performance</li>
+                <li>Ongoing Maintenance and Support</li>
+            </ul>
+        </section>
+
+        <section class="testimonials">
+            <h3>What People Say</h3>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p>"Gabriel's work is outstanding! He built our website exactly as we envisioned and made it responsive across all devices."</p>
+                    <footer>- Monicah Njeri</footer>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <p>"A pleasure to work with. Gabriel's ability to turn complex ideas into easy-to-use websites is amazing."</p>
+                    <footer>- Luis baraka</footer>
+                    <div class="stars">⭐⭐⭐⭐</div>
+                </div>
+                <div class="testimonial">
+                    <p>"The website Gabriel created for us has significantly increased our online presence. Highly recommend!"</p>
+                    <footer>- Angel Amani</footer>
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+        </section>
+        
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Wainaina. All rights reserved.</p>
+        <p><a href="contact.html" aria-label="Contact page">Get in touch!</a></p>
+    </footer>
+
+</body>
+</html>

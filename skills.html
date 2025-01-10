@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Gabriel Wainaina</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        header {
+            background: #3A506B; /* Dark blue from home page */
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            margin: 0.5rem 0 0;
+        }
+        nav {
+            background: #F0F4F8; /* Light background color from home page */
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #3A506B; /* Same dark blue */
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #2C3E50; /* Slightly darker shade for hover */
+        }
+        .main-content {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .main-content h2 {
+            font-size: 2rem;
+            color: #3A506B; /* Dark blue from home page */
+            margin-bottom: 1rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            justify-items: center; /* Centers items horizontally */
+        }
+        .skill-card {
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .skill-card h3 {
+            color: #3A506B; /* Dark blue */
+            margin-bottom: 0.5rem;
+        }
+        .skill-card p {
+            margin: 0.5rem 0;
+        }
+        h2 {
+            margin-top: 2rem;
+            font-size: 2rem;
+            color: #3A506B; /* Dark blue */
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: linear-gradient(to right, #2C3E50, #3A506B); /* Dark blue gradient */
+            padding: 1.5rem 2rem;
+            color: #fff;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        footer p {
+            margin: 0;
+        }
+        footer a {
+            color: #FFD700; /* Golden color */
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 600px) {
+            .skill-card i {
+                font-size: 1.5rem;
+            }
+            .skill-card {
+                padding: 1rem;
+            }
+        }
+        @media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    .main-content {
+        padding: 1rem;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+        gap: 1rem; /* Adjust spacing */
+    }
+    .skill-card {
+        padding: 1rem;
+    }
+    .skill-card i {
+        font-size: 1.5rem; /* Scale down icons */
+    }
+    footer p {
+        font-size: 0.8rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Skills</h1>
+        <p>Proficiencies and Expertise as a Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="index.html" aria-label="Navigate to home page">Home</a>
+        <a href="about.html" aria-label="Navigate to About Me">About Me</a>
+        <a href="skills.html" aria-label="Navigate to Skills page">Skills</a>
+        <a href="projects.html" aria-label="Navigate to Projects page">Projects</a>
+        <a href="blog.html" aria-label="Navigate to Blog page">Blog</a>
+        <a href="contact.html" aria-label="Navigate to Contact page">Contact</a>
+    </nav>
+
+    <div class="main-content">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-code" style="font-size: 2rem; color: #3A506B;" aria-hidden="true"></i>
+                <h3>Bubble.io</h3>
+                <p>No-code development for building functional web applications.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code" style="font-size: 2rem; color: #3A506B;" aria-hidden="true"></i>
+                <h3>Workflows</h3>
+                <p>Creating complex logic and automations to enhance app functionality.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code" style="font-size: 2rem; color: #3A506B;" aria-hidden="true"></i>
+                <h3>Design</h3>
+                <p>Crafting responsive and user-friendly interfaces with Bubble's visual editor.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code" style="font-size: 2rem; color: #3A506B;" aria-hidden="true"></i>
+                <h3>API Integration</h3>
+                <p>Connecting external services using APIs to expand app capabilities.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code" style="font-size: 2rem; color: #3A506B;" aria-hidden="true"></i>
+                <h3>Data Management</h3>
+                <p>Efficiently structuring and managing data within Bubble's database system.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code" style="font-size: 2rem; color: #3A506B;" aria-hidden="true"></i>
+                <h3>Plugins</h3>
+                <p>Utilizing and creating plugins to extend the functionality of Bubble applications.</p>
+            </div>
+        </div>
+
+        <h2>Soft Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-comments" style="font-size: 2rem; color: #3A506B;"></i>
+                <h3>Communication</h3>
+                <p>Clear and effective in conveying ideas and collaborating with teams.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-lightbulb" style="font-size: 2rem; color: #3A506B;"></i>
+                <h3>Problem-Solving</h3>
+                <p>Innovative thinker with a focus on finding efficient solutions.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-users" style="font-size: 2rem; color: #3A506B;"></i>
+                <h3>Teamwork</h3>
+                <p>Fostering collaboration and synergy in team environments.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Wainaina. All rights reserved.</p>
+        <p><a href="contact.html" style="color: #FFD700;" aria-label="Contact page">Get in touch!</a></p>
+    </footer>
+</body>
+</html>

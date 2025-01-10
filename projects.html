@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Gabriel Wainaina's Portfolio">
+    <meta property="og:description" content="Showcasing diverse projects including Imara Pamoja and Branlixia.">
+    <meta property="og:image" content="path-to-preview-image.jpg">
+    <meta property="og:url" content="https://your-portfolio-link.com">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Gabriel Wainaina's portfolio showcasing dynamic projects, including Imara Pamoja, Branlixia, and more.">
+    <meta name="keywords" content="portfolio, web developer, projects, Gabriel Wainaina, Imara Pamoja, Branlixia">
+    <meta name="author" content="Gabriel Wainaina">
+    <title>Projects - Gabriel Wainaina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #3A506B;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+    nav {
+        background: #F0F4F8;
+        padding: 1rem;
+        display: flex;
+        justify-content: center; /* Center the links */
+        align-items: center; /* Align items in the center vertically */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        text-align: center; /* Ensure centered alignment of text */
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #3A506B;
+        font-weight: 600;
+        padding: 0.5rem 1rem; /* Add some padding for better touch targets */
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+        color: #2C3E50;
+    }
+
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column; /* Stack links vertically on smaller screens */
+        }
+    }
+
+        .main-content {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background: #f4f4f4;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card img {
+            aspect-ratio: 16 / 9;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .project-card h3 {
+            font-size: 1.2rem;
+            color: #3A506B;
+            margin-top: 1rem;
+        }
+
+        .project-card p {
+            margin: 0.5rem 0 1rem;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background: #3A506B;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .project-card a:hover {
+            background: #2C3E50;
+        }
+
+        footer {
+            background: linear-gradient(to right, #2C3E50, #3A506B);
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+      
+
+            .project-card img {
+                aspect-ratio: 4 / 3;
+            }
+
+            footer {
+                padding: 1rem;
+            }
+        
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1.5rem;
+            }
+
+            .project-card {
+                padding: 0.5rem;
+            }
+
+            .project-card h3 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>A showcase of the diverse and dynamic projects I've worked on</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="blog.html">Blog</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="main-content">
+        
+        <div class="project-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="images/DALL·E 2024-11-11 08.17.12 - A diverse group of people of various abilities, including individuals with visible and invisible disabilities, smiling together in a park or community.webp" alt="Imara Pamoja Project">
+                <h3>Imara Pamoja</h3>
+                <p>An initiative empowering individuals with disabilities through inclusion and advocacy.</p>
+                <a href="https://imara-pamoja.bubbleapps.io/version-test">View Project</a>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="images/___2_.jpeg" alt="Branlixia Platform">
+                <h3>Branlixia</h3>
+                <p>A platform connecting brands and influencers to foster impactful partnerships.</p>
+                <a href="https://branlixia.bubbleapps.io/version-test/">View Project</a>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Project 3">
+                <h3>Coming Soon</h3>
+                <p>Details about this exciting project are coming soon!</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Wainaina. All rights reserved.</p>
+        <p>
+            Interested in working together? 
+            <a href="contact.html">Get in touch!</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Gabriel Wainaina</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #3A506B; /* Dark blue from Skills page */
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+        }
+
+        nav {
+            background: #F0F4F8; /* Light background */
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #3A506B; /* Same dark blue */
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: #2C3E50; /* Slightly darker shade */
+        }
+
+        .main-content {
+            background: #F0F4F8; /* Light background */
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            border-radius: 8px; /* Rounded edges */
+        }
+
+        .main-content h2 {
+            font-size: 2rem;
+            color: #3A506B; /* Dark blue */
+            margin-bottom: 1rem;
+        }
+
+        .main-content p {
+            margin: 1rem 0;
+        }
+
+        .main-content img {
+    width: 300px;  /* Increased size for the image */
+    height: 300px; /* Keep the height same as width for a perfect circle */
+    border-radius: 50%; /* Make the image round */
+    margin: 2rem auto;
+    display: block;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.main-content img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+        ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+        }
+
+        .highlight {
+            background: #F4F4F4; /* Subtle background */
+            padding: 1rem;
+            border-left: 4px solid #3A506B; /* Dark blue border */
+            margin: 1.5rem 0;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: linear-gradient(to right, #2C3E50, #3A506B); /* Gradient matching Skills page */
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 2rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #FFD700; /* Golden color */
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .main-content {
+                padding: 1rem;
+            }
+
+            .main-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .main-content p {
+                font-size: 1rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <p>Gabriel Wainaina - Passionate Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="main-content">
+        <h2>Hello! I'm Gabriel Wainaina</h2>
+        <p>
+            Welcome to my portfolio! I'm a dedicated web developer with a strong passion for creating beautiful,
+            functional, and user-friendly websites. With years of experience in web development, I specialize in crafting
+            seamless digital solutions that help individuals and businesses achieve their goals online.
+        </p>
+
+        <img src="images/avatar.png" alt="Gabriel Wainaina - Web Developer Profile Picture">
+
+        <h2>Mastering Bubble.io</h2>
+        <p>
+            My expertise in Bubble.io sets me apart as a web developer. Bubble.io is a no-code platform that revolutionizes
+            the way web applications are built. From drag-and-drop design to powerful backend workflows, Bubble empowers
+            developers to create robust, scalable applications without writing code.
+        </p>
+
+        <div class="highlight">
+            <h3>"With Bubble.io, the possibilities are endless."</h3>
+            <p>- Gabriel Wainaina</p>
+        </div>
+
+        <h2>Why Choose Bubble.io?</h2>
+        <ul>
+            <li>Launch your MVP (Minimum Viable Product) rapidly</li>
+            <li>Create responsive and interactive web applications</li>
+            <li>Integrate third-party APIs seamlessly</li>
+            <li>Scale your application to meet growing demands</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Gabriel Wainaina. All rights reserved.</p>
+        <p><a href="contact.html" aria-label="Contact Gabriel Wainaina">Get in touch!</a></p>
+    </footer>
+</body>
+</html>
