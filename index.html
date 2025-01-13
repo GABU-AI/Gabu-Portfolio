@@ -75,6 +75,87 @@
             text-decoration: underline;
             color: #34495e;
         }
+/* Flexbox layout for Profile Picture and Intro Text */
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    gap: 2rem; /* Space between image and text */
+    margin: 2rem auto;
+}
+
+/* Profile Picture Style */
+.profile-picture-container {
+    flex-shrink: 0; /* Prevent shrinking the profile picture */
+}
+
+.profile-picture {
+    width: 400px; /* Increased image size */
+    height: px;
+    border-radius: 20px; /* Rounded corners */
+    border: 5px solid #2c3e50; /* Border color and thickness */
+    object-fit: cover; /* Ensure the image maintains aspect ratio */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+}
+
+/* Hover Effect */
+.profile-picture:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.3); /* Deeper shadow */
+    border-color: #ee7600; /* Gold border on hover */
+}
+
+/* Intro Text Styles */
+.intro-text h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .profile-picture {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .intro-container {
+        flex-direction: column; /* Stack the image and text on top of each other on smaller screens */
+        align-items: center;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-picture {
+        width: 180px;
+        height: 180px;
+    }
+
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text p {
+        font-size: 1rem;
+    }
+}
+
 
         /* Main Content Styles */
         .main-content {
@@ -359,11 +440,14 @@
     </nav>
 
     <div class="main-content">
+         <div class="profile-picture-container">
+        <img src="images/png" alt="Gabriel Wainaina's Profile Picture" class="profile-picture">
+        
         <h2>Welcome to My Portfolio</h2>
         <p>Hello! I’m Gabriel Wainaina, a seasoned web developer specializing in creating dynamic, user-friendly websites that deliver seamless digital experiences.<br> a passion for coding and a knack for problem-solving, I transform ideas into functional, visually appealing web solutions.</p>
         <p>Whether you're a business looking to establish an online presence, an individual with a creative project, or a team in need of collaboration, I’m here to help you achieve your goals.</p>
         <p>Explore my work, learn about my journey, and feel free to reach out for collaborations or inquiries. Together, we can build something amazing!</p>
-
+</div>
         <section>
             <h3>Why Choose Me?</h3>
             <ul>
